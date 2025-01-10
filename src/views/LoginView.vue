@@ -37,11 +37,15 @@
                 type="email"
                 label="Email"
                 v-model="email.value.value"
+                :error-messages="email.errorMessage.value"
+                class="mb-5"
             />
             <v-text-field
                 type="password"
                 label="Password"
                 v-model="password.value.value"
+                :error-messages="password.errorMessage.value"
+                class="mb-5"
             />
             <v-btn
                 block
