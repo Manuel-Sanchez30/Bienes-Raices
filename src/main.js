@@ -18,11 +18,14 @@ import { firebaseApp} from './config/firebase'
 
 
 const app = createApp(App)
+
+//vuetify
 const vuetify = createVuetify({
     components,
     directives
 })
 
+//Firebase
 app.use(VueFire, {
     firebaseApp,
     modules:[VueFireAuth]
